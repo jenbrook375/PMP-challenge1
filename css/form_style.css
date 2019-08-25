@@ -67,3 +67,17 @@ ul {
     border:0;
     text-transform: uppercase;
   }
+
+  @media(min-width:700px){
+   .wrapper{
+       display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper >* {
+        padding: 2em;
+        font-size: 20px;
+    }
+    .wrapper .company{
+        text-align: left;
+    }
+  }
