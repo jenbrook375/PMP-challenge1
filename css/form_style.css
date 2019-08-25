@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background:#b9cbcf;
+    color: #494344;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1170;
+    margin: auto;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    margin: auto;
+}
+
+.wrapper {
+    box-shadow: 0 0 15px 0 #494344;
+}
+
+.wrapper >* {
+    padding: 1em;
+}
+
+.company {
+    background:	#E38201;
+    text-align: center;
+}
+
+.contact {
+    background: lightgray;
+}
+
+/* Form Styles */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+}
+
+.contract form label {
+    display: block;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #c9e6ff;
+  }
+
+  .contact form .mess{
+    grid-column: 1 / 3;
+  }
+
+  .contact form button{
+    background:#1C6D8A;
+    border:0;
+    text-transform: uppercase;
+  }
