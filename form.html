@@ -23,34 +23,42 @@
             </div>
             <div class="contact">
                 <h3>Email Us</h3>
-                <form action="">
+                <form id="contactForm" action="">
                     <p>
                         <label for="">Name</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="name">
                     </p>
                     <p>
                         <label for="">Company</label>
-                        <input type="text" name="company">
+                        <input type="text" name="company" id="company">
                     </p>
                     <p>
                         <label for="">Email Address</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="email">
                     </p>
                     <p>
                         <label for="">Phone Number</label>
-                        <input type="text" name="phone">
+                        <input type="text" name="phone" id="phone">
                     </p>
                     <p class="mess">
                         <label for="">Message</label>
-                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </p>
                     <p class="mess">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </p>
                 </form>
             </div>
         </div>
     </div>
-    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
