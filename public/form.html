@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Lexend+Deca|Livvic&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/form_style.css">
     <title>Form</title>
 </head>
+
 <body>
     <div class="container">
+        <!-- logo and company contact info -->
         <img class="logo" src="imgs/db_logo.png">
         <div class="wrapper">
             <div class="company">
@@ -21,6 +25,7 @@
                     <li><i class="fa fa-envelope"></i> @DB.page</li>
                 </ul>
             </div>
+            <!-- contact form for capturing data -->
             <div class="contact">
                 <h3>Email Us</h3>
                 <form id="contactForm" action="">
@@ -45,20 +50,31 @@
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </p>
                     <p class="mess">
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="submit">Submit</button>
                     </p>
                 </form>
             </div>
         </div>
     </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#reserved-urls -->
+     https://firebase.google.com/docs/web/setup#config-web-app -->
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBElIzZCf8xVutODbNES8Ulbnsa3UN1iW4",
+            authDomain: "brookshirepmp.firebaseapp.com",
+            databaseURL: "https://brookshirepmp.firebaseio.com",
+            projectId: "brookshirepmp",
+            storageBucket: "",
+            messagingSenderId: "510835145695",
+            appId: "1:510835145695:web:6b23fdbd46929416"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="js/form.js"></script>
 </body>
-</html>

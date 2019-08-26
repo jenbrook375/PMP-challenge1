@@ -68,6 +68,7 @@ ul {
     text-transform: uppercase;
   }
 
+  /* changes grid columns to 2 when viewed on larger device */
   @media(min-width:700px){
    .wrapper{
        display: grid;
